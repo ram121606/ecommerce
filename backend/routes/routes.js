@@ -11,35 +11,17 @@ router.post("/insert",async (req,res)=>{
     // console.log(response);
     res.send("success")
 })
+router.post('/register',(req,res)=>{
+    const {email, password} = req.body
 
-router.post("/insertacc",async (req,res)=>{
-    const {name,brand,size,rating,dod,stock,price,img} = req.body;
-    const response = await model1.create({name,brand,size,rating,dod,stock,price,img})
-    res.send("added")
 })
 
-    router.get("/getclothing", (req, res) => {
-    model.find({}).then((data)=>{console.log(data);}).catch((err)=>{console.log(err);})
-    // console.log(data);
-    // const {data}=model.find({})
-    // console.log(data);
-    });
+router.post('/login',(req,res)=>{
+    const {email, password} = req.body
 
-router.get("/getaccessories", (req, res) => {
-  const data = model1.find({});
-  console.log(data);
-});
+})
 
-router.post("/register", (req, res) => {
-  const { email, password } = req.body;
-});
-
-router.post("/login", (req, res) => {
-  const { email, password } = req.body;
-});
-
-router.post("/filter", (req, res) => {
-  const { data } = req.body;
-});
-
-export default router;
+router.post('/filter',(req,res)=>{
+    const {data} = req.body
+    
+})
