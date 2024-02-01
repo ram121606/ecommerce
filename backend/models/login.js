@@ -1,6 +1,6 @@
-import mongoose from mongoose
+import mongoose from 'mongoose'
 
-const data = new mongoose.schema({
+const data = new mongoose.Schema({
     name: String,
     email: String,
     password: String

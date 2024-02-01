@@ -1,14 +1,15 @@
-import mongoose from mongoose
+import mongoose from 'mongoose'
 
-const data = new mongoose.schema({
+const data = new mongoose.Schema({
     name: String, 
     brand: String,
     size: String,
     rating: Number,
     dod: Date,
-    stock: Number,
-    price: Number
+    stock: Boolean,
+    price: Number,
+    img: String
 }) 
 
-const model = mongoose.model('clothing',data)
-export default model
+const model1 = mongoose.model('accessories',data)
+export default model1
