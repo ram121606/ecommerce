@@ -9,6 +9,7 @@ dotenv.config()
 const db = process.env.MONGO_URI
 
 const app=express()
+app.use(express.json())
 
 mongoose.connect(db)
     .then(()=>{console.log("<>S")})

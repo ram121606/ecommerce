@@ -4,6 +4,20 @@ import model1 from "../models/accessories.js";
 
 const router = express.Router();
 
+router.post("/insert",async (req,res)=>{
+    const {name,brand,size,rating,dod,stock,price,img} = req.body;
+    // console.log(req.body);
+    const response= await model.create({name, brand,size,rating,dod,stock,price,img})
+    // console.log(response);
+    res.send("success")
+})
+
+router.post("/insertacc",async (req,res)=>{
+    const {name,brand,size,rating,dod,stock,price,img} = req.body;
+    const response = await model1.create({name,brand,size,rating,dod,stock,price,img})
+    res.send("added")
+})
+
     router.get("/getclothing", (req, res) => {
     model.find({}).then((data)=>{console.log(data);}).catch((err)=>{console.log(err);})
     // console.log(data);
