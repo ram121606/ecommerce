@@ -1,14 +1,22 @@
 import express from 'express'
-// import bodyParser from 'body-parser'
-import dotenv from 'dotenv'
+import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
+import cookieParser from 'cookie-parser'
+import {router} from './routes/authRoutes.js'
 
+import dotenv from 'dotenv'
 dotenv.config()
 const db = process.env.URI
+const port=process.env.PORT
 
 const app=express()
+app.use(bodyParser.json())
+app.use(express.json())
+app.use('/auth',router)
 
-mongoose.connect(db).then(()=>{console.log("<>S")}).catch((err)=>{console.log(err)})
-app.listen(3000,()=>{
-    console.log(3000);
+mongoose.connect(db)
+.then(()=>{
+    app.listen(port,()=>{
+        console.log(`connected on ${port}`);
+    })
 })
