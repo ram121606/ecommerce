@@ -7,7 +7,7 @@ import {router} from './routes/authRoutes.js'
 import dotenv from 'dotenv'
 dotenv.config()
 const db = process.env.URI
-const port=process.PORT
+const port=process.env.PORT
 
 const app=express()
 app.use(bodyParser.json())
