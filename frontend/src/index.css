@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply font-serif;
+  @apply font-serif bg-[#F5F5F5];
 }
 
 .ctr {

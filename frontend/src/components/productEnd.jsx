@@ -5,8 +5,8 @@ export default function EndProduct({ desc }) {
   return (
     <>
       <h3>Quantity</h3>
-      <div className="flex flex-row items-center quantity w-1/3 space-x-14 rounded-full justify-center overflow-hidden">
-        <button type="submit" className="btn btn-ghost hover: bg-inherit">
+      <div className="flex flex-row items-center quantity w-1/4 rounded-full justify-center space-x-5 relative">
+        <button type="submit" className="btn btn-ghost">
           -
         </button>
         <h1>{quantity}</h1>

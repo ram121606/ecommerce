@@ -19,7 +19,12 @@ export default function ProductPage() {
     <>
       <div className="ctr mx-5 h-[100%] rounded-lg my-24">
         <div className="image_container">
-          <img id="image" src={product.image} alt="" />
+          <img
+            id="image"
+            src={product.image}
+            alt="image"
+            className="flex-auto"
+          />
         </div>
         <div className="description_container mb-4">
           <div className="card shadow-3xl">
@@ -30,7 +35,6 @@ export default function ProductPage() {
                 <span className="badge badge-neutral mx-2">Sale</span>
               </span>
               <pre className="underline">Shipping calculated at checkout!!</pre>
-              {/* <p>{product.description}</p> */}
               <SizeComponent />
               <EndProduct desc={product.description} />
               <div className="btn btn-ghost mt-2 border-black hover:bg-black hover:text-white">

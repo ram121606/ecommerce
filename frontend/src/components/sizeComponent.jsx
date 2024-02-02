@@ -19,7 +19,6 @@ export default function SizeComponent() {
             id={size}
             className={`p-3 badge rounded-badge hover:border-black text-sm`}
             key={size}
-            // onClick={handleClick(size)}
           >
             {size}
           </button>
