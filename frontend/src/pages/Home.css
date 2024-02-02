@@ -1,0 +1,227 @@
+.image {
+    height: 400px;
+    width: 1350px
+}
+
+.ctr2 {
+    padding-top: 400px;
+    position: relative;
+    /* width: 500px; */
+    max-width: 100%;
+    /* height: 400px; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: change-img-anim 30s infinite;
+}
+
+.image:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.image:nth-of-type(2) {
+    animation-delay: 3s;
+}
+
+@keyframes change-img-anim {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fixed-button {
+    position: absolute;
+    bottom: 40px;
+    /* Adjust the bottom value as needed */
+    left: 170px;
+    /* Adjust the left value as needed */
+    z-index: 1;
+    /* Ensures the button appears on top of the images */
+    border-radius: 10px;
+    font-size: 28px;
+    background-color: brown;
+    color: white;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.product-item {
+    text-align: center;
+    width: 20%;
+    /* margin: 0 0.1% 0.2% 0.1%; */
+    transform: skew(-10deg);
+    overflow: hidden;
+}
+
+.product-item img {
+    width: 120%;
+    /* height: auto; */
+    transform: skew(10deg);
+    margin-left: -10%;
+}
+
+.product-item h2 {
+    margin: 1% 0;
+    transform: skew(10deg);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1% 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transform: skew(10deg);
+}
+
+.logopng {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logopng div {
+    width: 25%;
+    /* Adjust the width as needed */
+}
+
+.product-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.H1 {
+    text-align: center;
+}
+
+/* <-------footer------> */
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    /* padding: 20px; */
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.footer-section {
+    font-family: math;
+    flex-basis: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    margin: 0 0 10px;
+    /* text-align: center; */
+}
+
+.footer-section a {
+    /* margin: 0 0 10px; */
+    /* line-height: 1.5; */
+    /* text-decoration: none; */
+    /* color: inherit;  */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.footer-section a:hover {
+    text-decoration: underline black;
+}
+
+.social i {
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+.footer-section Link {
+    text-decoration: none;
+}
+
+.copyright {
+    font-family: math;
+    text-align: center;
+}
+
+/* timer */
+
+/* .timer img{
+        border-radius: 135px; */
+        /* display: block; */
+        /* margin-left: 500px;
+        margin-right: auto;
+}
+.timer h2{
+ font-family: math;
+ margin-left: 850px;
+} */
+
+.timer {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 300px;
+    padding-right: 250px;
+  }
+  
+  .text-image {
+    flex: 1;
+  }
+  
+  .text-content {
+    font-family: math;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .rounded-image {
+    border-radius: 130px;
+  }

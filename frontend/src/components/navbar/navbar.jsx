@@ -11,7 +11,7 @@ function Navbar() {
                 <a href="/shop">Home</a></Link>
 
             <Link to="/Products">
-                <a href="/Products">Product</a></Link>
+                <a href="/Product">Product</a></Link>
 
             <Link to="/Products">
                 <a href="/blog">Blog</a></Link>
@@ -19,7 +19,7 @@ function Navbar() {
                 <a href="/contacts">Cart</a></Link></div>
                 <div>
                 <div className="right-section">
-                <Link to="/Products">   <button className="searchButton">Search</button></Link>
+                <Link to="/Product">   <button className="searchButton">Search</button></Link>
         <button className="signInButton">Sign In</button>
       </div>
                 </div>
