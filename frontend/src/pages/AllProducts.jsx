@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
+import Loading from "../components/Loading";
+// import { motion } from "framer-motion";
+
+// const variants = {
+//   hidden: { opacity: 0 },
+//   animate: { opacity: 1 },
+// };
 
 export default function GetProducts() {
   const [products, setProducts] = useState([]);
@@ -19,10 +26,13 @@ export default function GetProducts() {
 
   return (
     <>
-      <div className="my-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {products.slice(1).map((product) => (
           <Card product={product} key={product.id} />
         ))}
+      </div>
+      <div className="flex justify-center items-center">
+        <Loading />
       </div>
     </>
   );
