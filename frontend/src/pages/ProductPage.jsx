@@ -10,7 +10,7 @@ export default function ProductPage() {
       const response = await fetch("https://fakestoreapi.com/products/17");
       const data = await response.json();
       setProduct(data);
-      console.log(product);
+      // console.log(product);
     };
     fetchData();
   }, []);
